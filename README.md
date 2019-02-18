@@ -3,9 +3,9 @@ Modular code parts for Unity3D.
 
 # Roadmap
 ## Pre-game
-- Awake Functions Handler
-- Start Functions Handler
+- Awake Functions Handler :tada:
+- Start Functions Handler :tada:
 ## In-game
 ## Debug
-- Main Debug Handler
-- Enumerator Tracker
+- Main Debug Handler :gift:
+- Enumerator Tracker :tada:
