@@ -7,5 +7,5 @@ Modular code parts for Unity3D.
 - Start Functions Handler :tada:
 ## In-game
 ## Debug
-- Main Debug Handler :gift:
+- Main Debug Handler :tada:
 - Enumerator Tracker :tada:
