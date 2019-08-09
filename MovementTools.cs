@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovementTools
 {
-    public class Velocity : MonoBehaviour
+    public class Velocity
     {
         public static void Move_X (Rigidbody2D rb2d, int direction, int speed)
         {
@@ -17,7 +17,7 @@ public class MovementTools
         }
     }
 
-    public class Translate : MonoBehaviour
+    public class Translate
     {
         public static void Move_X (Transform trans, int direction, int speed)
         {
