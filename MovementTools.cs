@@ -16,26 +16,23 @@ public class MovementTools
         }
     }
 
-    public class Translate
-    {
-        public class Variable_Speed
-        {
-            public static void Move_X (Transform trans, float direction, float speed)
-            {
-                trans.Translate (new Vector2 (direction * speed, 0) * Time.deltaTime);
-            }
+	public class Translate
+	{
+		public static void Move_X (Transform trans, float direction, float speed)
+		{
+			trans.Translate (new Vector2 (direction * speed, 0) * Time.deltaTime);
+		}
 
-            public static void Move_Y (Transform trans, float direction, float speed)
-            {
-                trans.Translate (new Vector2 (0, direction * speed) * Time.deltaTime);
-            }
+		public static void Move_Y (Transform trans, float direction, float speed)
+		{
+			trans.Translate (new Vector2 (0, direction * speed) * Time.deltaTime);
+		}
 
-            public static void Move_XY (Transform trans, float directionX, float directionY, float speed)
-            {
-                trans.Translate (new Vector2 (directionX, directionY) * speed * Time.deltaTime);
-            }
-        }
-    }
+		public static void Move_XY (Transform trans, float directionX, float directionY, float speed)
+		{
+			trans.Translate (new Vector2 (directionX, directionY) * speed * Time.deltaTime);
+		}
+	}
 
     public class Shift
     {
@@ -45,7 +42,7 @@ public class MovementTools
             {
                 float direction = -(Mathf.Sign (targetObject.position.x - targetPos));
 
-                Translate.Variable_Speed.Move_X (targetObject, direction, speed);
+                Translate.Move_X (targetObject, direction, speed);
 
                 yield return null;
             }
@@ -59,7 +56,7 @@ public class MovementTools
             {
                 float direction = -(Mathf.Sign (targetObject.position.y - targetPos));
 
-                Translate.Variable_Speed.Move_Y (targetObject, direction, speed);
+                Translate.Move_Y (targetObject, direction, speed);
 
                 yield return null;
             }
